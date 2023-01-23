@@ -1,0 +1,110 @@
+---
+title: "R_activity"
+output: html_document
+date: "2023-01-23"
+---
+# <font color = "lightblue">1. Data Preprocessing and Feature Engineering</font>
+
+## Getting Started with Data Preprocessing
+
+Raw data, prior to data preprocessing, is typically not ready to be fed into any machine learning algorithm. This is because the raw data that you are provided is often incomplete, messy, noisy, and inconsistent. For example, if we were to have a date column, it's completely possible that ome entries within your dataframe may be inconsistent with different formatting (i.e. dd/mm/yyyy, mm.dd.yyyy, yyyy mm-dd). As another example, there may be missing data within your table because of unrecorded measurements or sensors not working properly. Also, there may be statistical outliers that need to be dealt with (i.e. if you're measuring the price of apartments/flat per month in Heidelberg, an outlier could be one that's 25000 EUR a month). Whatever issues your dataset has, you need to handle them accordingly, which is what data preprocessing is.
+
+Whereas data preprocessing deals with fixing your data to be a usable format, the idea of feature engineering is to make better use of your pre-existing columns, which may (or may not) help your machine learning algorithm and help you develop better initial insights. For example, say that we preprocessed our aforementioned date column. Feature engineering would mean creating brand new columns such as is_weekend or is_holiday stemming directly from that date column.
+
+Typically, when using R for data science, there are many built-in functions that allow you to do a majority of your data wrangling but packages such as caret and dplyr help make your life much easier. This idea of data preprocessing and feature engineering, however, is closely tied into being able to work with data tables and/or matrices that hold all of your data.
+
+## Resources:
+- Basics of R: https://www.section.io/engineering-education/data-preprocessing-in-r/
+- Data Preprocessing: https://www.upgrad.com/blog/data-preprocessing-in-r/
+- Using Caret: https://machinelearningmastery.com/pre-process-your-dataset-in-r/
+- Manipulating, analyzing and exporting data with Tidyverse: https://datacarpentry.org/R-ecology-lesson/03-dplyr.html
+- Feature Engineering: https://www.geeksforgeeks.org/feature-engineering-in-r-programming/
+- Introduction to dplyr: https://dplyr.tidyverse.org/
+
+## Questions to Consider:
+- Are there any missing values or outliers within your dataset? If so, do you want to delete these rows , impute the values, or cap them to be a particular number?
+- Are there any inconsistincies within your data?
+- Have you one-hot encoded any categorical variables that you may have?
+- Are there any seemingly useless columns within your dataset?
+- Are there any duplicated rows? Duplicated columns?
+
+```{r data-preprocessing}
+# INSERT CODE HERE
+```
+
+# <font color = "lightblue">2. Exploratory Data Analysis (EDA)</font>
+
+## Getting started with EDA: Graphing Libraries
+Exploratory Data Analysis is used in order to get a better understanding of the dataset that you're working wit., particularly through statistics and different plots. Often, you're not completely familiar with the dataset that you're working with and plotting things such as histograms, boxplots, barcharts, correlation matrices, etc. all help in giving you a better idea of what information you actually have. Through this, you could identify and hypothesize about different patterns or you can even come up with questions that you'd like to answer when moving on in the machine learning pipeline.
+
+Within R, many people choose to create graphs using the base R graphing library but others (such as myself) like to use `ggplot2`. The benefit of using `ggplot2` is that I think it's quite nicer while giving you more customization in terms of colors, graphs, overlays, etc..
+
+Getting started with graphing in base R: https://r-lang.com/plot-function-in-r-with-example/
+
+Getting started with graphing using ggplot2: https://ggplot2-book.org/getting-started.html
+
+## EDA Examples:
+- Example using a diamonds dataset: https://www.statology.org/exploratory-data-analysis-in-r/
+- Example using a gold dataset: https://towardsdatascience.com/using-r-for-exploratory-data-analysis-eda-analyzing-golf-stats-812b5feb077a
+- Plotting with `ggplot2`: https://theanalyticalminds.blogspot.com/2015/03/part-3a-plotting-with-ggplot2.html
+- ggplot2 cheat sheet: https://miro.medium.com/max/4584/1*JXPvSBL-DxocIjdziCJkfw.jpeg
+
+## Questions to Consider:
+- What hypotheses could be generated from your pre-existing data?
+- What are you trying to show when you have a certain plot? What is the main takeaway?
+- Is the type of plot that you created the best for displaying your point?
+
+```{r eda}
+# INSERT CODE HERE.
+```
+
+# <font color = "lightblue">Modeling</font>
+## Getting Started with Modeling
+The main concept of this seminar is to learn multiple different machine learning algorithms and apply them to real datasets. In order to implement this within R, there are many libraries that essentially do the same thing (i.e. multiple libraries for Random Forests for example). As for resources, I cannot recommend anything more than the free book called Introduction to Statistical Learning, which has applications of all of these algorithms in R. This can be found here: https://hastie.su.domains/ISLR2/ISLRv2_website.pdf
+
+Most relevant chapters:
+- Chapter 2: Statistical Learning (must read)
+- Chapter 3: Linear Regression
+- Chapter 4: Classification (Logitstic Regression)
+- Chapter 5: Resampling Methods
+    -Particularly take a look at Chapter 5.1 Cross-Validation
+- Chapter 8: Tree-Based Methods (Decision Trees and Random Forests)
+- Chapter 9: Support Vector Machines
+- Chapter 10: Deep Learning
+- Chapter 11: Survival Analysis
+- Chapter 12: Unsupervised Learning (PCA, K-Means, and Hierarchical Clustering)
+
+Neural Networks: https://www.datacamp.com/tutorial/neural-network-models-r
+
+## Questions to Consider:
+- Have you split your dataset into a training and testing split? Did you consider cross-validation?
+- If your dataset is imbalanced, does both your training/testing splits have relatively the same distribution?
+- Is this a classification or regression problem?
+- What algorithms will you try? Why do you think that's the proper one to choose? Are there any properties of one algorithm that you can't get from another?
+- What metric will you use? Why is this the best case?
+- What should be considered a "good" result?
+- Is your analysis reproducible?
+```{r modeling}
+# INSERT CODE HERE.
+```
+
+# <font color = "lightblue">Results</font>
+## Getting Started with Results/Conclusions
+After determining which model performs best, the final and often-overlooked phase is to properly communicate your results to your target audience. This should be done in the form of text, statistics and additional figures to further prove/disprove the hypothesis that you might've had.
+
+
+## Questions to Consider:
+- Who are you presenting this analysis to? Is it easy for them to understand?
+- What have you learned from your analysis? Is there anything that you would do or wouldn't do if given this project over again?
+- Were there any new insights? Were they any old insights that were validated/invalidated?
+- What are the consequences of your results?
+-What methods worked and didn't work? Why do you think that this was the case?
+  - Note: If something doesn't work, don't worry about it - welcome to science in general! The important to note here is to ask yourself why you think something didn't work. Did you potentially make incorrect assumptions about your data? Is your data truly linear or is non-parametric? Do you have enough data to run the algorithm in the first place?
+- What are potential 'next steps' for someone (such as yourself) to follow after this project is done? Did your results lead to more questions that you can think of? Why or why not?
+
+```{r results}
+# INSERT CODE HERE.
+```
+
+# <font color = "lightblue">Wrapping Up</font>
+Now that you've finished your analysis, I hope that you learned a lot from this! In our opinion, the best way to truly learn how to do something is by actually doing it so whether you got good results or not, at least you took the time to learn something new. Lastly, if you have any ideas as to what would make this R activity better, feel free to email me at nicholas.abad@dkfz-heidelberg.de! Thank you! :)
