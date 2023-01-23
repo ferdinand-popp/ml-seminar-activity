@@ -53,3 +53,8 @@ After this step is complete and wihtin your terminal/command line, navigate to w
 ### Option 2: Using R / R Markdown Files
 On the other hand, if you'd like to continue doing this activity using R, ensure that you have R installed first and foremost and an IDE such as R-Studio. When using R, to download different packages, you could download them using the command `install.packages()`. Rather than having an R script, a more interactive way to display your code along with comments/images is through the use of R Markdown files. If using R-Studio, R Markdown files can be loaded in directly or if you'd like to create your own, you can go to `New File > R Markdown`. In order to properly view your document in a common form such as HTML or PDF, you can knit your Markdown file to html or PDF, which creates the file in the chosen format and saves this to your local machine.
 
+
+# Datasets
+In order to download the datasets, unfortunately GitHub is not the greatest way to store data and therefore we have data for you to play around with in a Google Drive. In order to get access and the link, feel free to email either Nicholas Abad (nicholas.abad@dkfz-heidelberg.de), Dr. Oscar Gonzalez Velasco (oscar.gonzalezvelasco@dkfz-heidelberg.de) or Dr. Roma Kurilov (r.kurilov@dkfz-heidelberg.de).
+
+
