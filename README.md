@@ -21,8 +21,10 @@ With this activity, our goals are the following:
 # Getting Started
 Before doing any work, it's extremely common for machine learning engineers, data scientists, and bioinformaticians to use some type of version control. Without getting into too much details, it's a way for users to "load in" someone's previous coding repository so that they can make changes or use it as a default starting point. In our case, we will be using GitHub but there are other alternatives such as GitLab, Bitbucket, Google Cloud Source Repositories, and AWS CodeCommit but thankfully, they all work the same way. If you are unaware of what version control does, feel free to watch this video: https://www.youtube.com/watch?v=USjZcfj8yxE&ab_channel=ColtSteele
 
-### Downloading Git
+### Downloading Git and IDE
 If you do not yet have Git installed, follow the directions to do so here: https://git-scm.com/downloads
+
+If you dont have an IDE, we can recommend Visual Studio Code: https://code.visualstudio.com/download
 
 ### Cloning the Repository
 Now, open your terminal in your respective operating system and ensure that git is properly installed by typing:
@@ -42,7 +44,9 @@ If you'd like to continue doing this activity using Python, ensure that you have
 
 `pip` is by default installed next to python for most versions. If not: To download `pip`, follow the directions here: https://www.geeksforgeeks.org/download-and-install-pip-latest-version/
 
-Once this is downloaded properly, install `Jupyter Notebooks` by inputting the following command into your terminal/command line:
+Optionally: If you dont want all the packages install for all project, you can create a virtual environment as called venv in your project folder. Most IDEs can do that for you or you can follow this explanation: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/ 
+
+Next, install `Jupyter Notebooks` by inputting the following command into your terminal/command line:
 
 `pip install notebook`
 
