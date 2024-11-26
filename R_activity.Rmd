@@ -107,4 +107,4 @@ After determining which model performs best, the final and often-overlooked phas
 ```
 
 # <font color = "lightblue">Wrapping Up</font>
-Now that you've finished your analysis, I hope that you learned a lot from this! In our opinion, the best way to truly learn how to do something is by actually doing it so whether you got good results or not, at least you took the time to learn something new. Lastly, if you have any ideas as to what would make this R activity better, feel free to email me at nicholas.abad@dkfz-heidelberg.de! Thank you! :)
+Now that you've finished your analysis, I hope that you learned a lot from this! In our opinion, the best way to truly learn how to do something is by actually doing it so whether you got good results or not, at least you took the time to learn something new. Lastly, if you have any ideas as to what would make this R activity better, feel free to contact me on Discord (Julia Münch)! Thank you! :)
